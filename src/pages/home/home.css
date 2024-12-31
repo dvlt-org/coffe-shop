@@ -1,0 +1,105 @@
+.home {
+    background: url("../../assets/background.png");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.homeContainer {
+    width: 1400px;
+    height: 70px;
+    max-width: 100%;
+}
+
+.header {
+    gap: 0.7rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    color: white;
+    clip-path: polygon(0 0, 57% 0, 88% 100%, 0% 100%);
+    background-color: rgba(0, 0, 0, 0.28);
+    width: 70%;
+    height: 100vh;
+}
+
+.headerTitles {
+    margin-left: calc((100vw - 1400px) / 2);
+}
+
+.headerLine {
+    height: 5px;
+    width: 30%;
+    background-color: aliceblue;
+    margin: 20px 0px;
+}
+
+.header h3 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.header h1 {
+    font-weight: 400;
+    font-family: "Crimson Text", serif;
+    font-size: 96px;
+}
+
+.header p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* cardItems */
+.cardItemsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+/* .cardItems {
+    width: 1400px;
+    max-width: 100%;
+} */
+
+
+@media (max-width: 768px) {
+    .header {
+        background: none;
+        background-color: rgba(0, 0, 0, 0.28);
+        width: 100%;
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+    .headerLine {
+        width: 100%;
+    }
+
+    .headerTitles {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .headerTitles h1 {
+        font-size: 25px;
+    }
+
+    .headerTitles p {
+        font-size: 10px;
+    }
+
+    .headerTitles h3 {
+        font-size: 16px;
+    }
+}
